@@ -1,0 +1,3 @@
+*.pyc
+SOM_generated.csv
+output.csv
