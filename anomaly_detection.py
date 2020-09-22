@@ -73,7 +73,7 @@ def transform_df(df, sensor, state_to_analyze):
     new_df = pd.DataFrame(data)
 
     # normalize timestamp
-    for index, row in new_df.iterrows():
+    for index, _ in new_df.iterrows():
         time = new_df.loc[index, 'start']
         new_df.loc[index, 'start'] = int(
             time.hour) * 60 * 60 + int(time.minute) * 60 + int(time.second)
